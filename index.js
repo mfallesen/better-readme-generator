@@ -1,5 +1,7 @@
 const fs = require('fs');
 const inq = require('inquirer')
+// import readmePrompts from './prompts/readmePrompts'
+const readmePrompts = require('./prompts/readmePrompts')
 
 function userPrompt() {
     inq.prompt([
@@ -12,7 +14,7 @@ function userPrompt() {
     ]).then((responses) => {
         console.log(responses.FileType)
         switch (responses.FileType) {
-            case Readme:
+            case 'Readme':
 
                 readmePrompts();
 

@@ -1,47 +1,52 @@
 // let response = SOMETHING?!?!?
+function readmeTemplateGenerator(res) {
 
-const markdownTemplate = `
-# ${response.Title}
-## Description 
-${response.Description}
+    const markdownTemplate = `
+    # ${res.Title}
+    ## Description 
+    ${res.Description}
     
     
     
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-      
+    ## Table of Contents
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
     
-## Installation
-${response.Installation}
     
-## Usage 
+    ## Installation
+    ${res.Installation}
     
-*Instructions and examples for use:*
+    ## Usage 
     
-![Gif demo of README-generator](readme-demo.gif)
+    *Instructions and examples for use:*
     
-${response.Usage}
+    ![Gif demo of README-generator](readme-demo.gif)
     
-## License
+    ${res.Usage}
     
-This application is provided under an ${response.License} License.
+    ## License
     
----
+    This application is provided under an ${res.License} License.
     
-## Contributing
+    ---
     
-${response.Contribution}
+    ## Contributing
     
-## Tests
+    ${res.Contribution}
     
-Right now there is no testing enabled
+    ## Tests
     
-## Questions?
-Get in touch.
-GitHub: https://github.com/${response.GitHub}
+    Right now there is no testing enabled
     
-Email: ${response.Email} `
+    ## Questions?
+    Get in touch.
+    GitHub: https://github.com/${res.GitHub}
+    
+    Email: ${res.Email} `
+
+}
+
+// export default readmeTemplateGenerator();

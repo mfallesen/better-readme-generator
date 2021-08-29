@@ -1,4 +1,6 @@
-import inq from 'inquirer'
+const inq = require('inquirer')
+// import readmeTemplateGenerator from '../templates/markdown-template-readme'
+const readmeTemplateGenerator = require('../templates/markdown-template-readme')
 
 function promptsToRenderReadme() {
    
@@ -50,7 +52,7 @@ function promptsToRenderReadme() {
             name: "Email"
         },
     ]).then((responses) => {
-        console.log(responses)
+        console.log(readmeTemplateGenerator(responses))
     })
 }
 
